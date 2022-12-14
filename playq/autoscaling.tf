@@ -4,8 +4,6 @@ provider "aws" {
 
 data "aws_availability_zones" "available" {}
 
-# as for the hint to use "lookup" function to choose the correct AMI based upon the region - usage of this function for additional filtering by region is useless, because provider "aws" is already restricted by region, and other nested resources follow this param, so in my humble opinion it would be best to use of data source "aws_ami" for this case
-
 data "aws_ami" "latest_amazon_linux" {
   owners      = ["amazon"]
   most_recent = true
