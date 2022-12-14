@@ -77,3 +77,6 @@ in case of requesting specific existing file you will get HTTP 200
 </html>
 * Connection #0 to host playq-2019-181606912.us-east-1.elb.amazonaws.com left intact
 ```
+
+#### Comments
+as for the hint to use "lookup" function to choose the correct AMI based upon the region - usage of this function for additional filtering by region is useless, because provider "aws" is already restricted by region, and other nested resources follow this param, so in my humble opinion it would be best to use of data source "aws_ami" for this case
