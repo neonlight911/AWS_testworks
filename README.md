@@ -10,7 +10,7 @@ Provision via Terraform an AWS Autoscaling Group and Application Load Balancer i
 After applying you should get a SUCCESS response with the DNS name of your load balancer to connect to the application.
 ```bash
 
-Apply complete! Resources: 9 added, 0 changed, 0 destroyed.
+Apply complete! Resources: 11 added, 0 changed, 0 destroyed.
 
 Outputs:
 
